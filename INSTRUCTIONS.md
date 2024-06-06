@@ -1,6 +1,6 @@
 # Esercizio per Sviluppatore Junior: Sviluppo di un'Applicazione Web
 
-**Obiettivo**: Sviluppare una semplice applicazione web che gestisca un elenco di attività. Puoi scegliere di utilizzare Laravel (preferito) o PHP puro per il backend e qualsiasi framework frontend (Angular, Vue, React). Inoltre, l'intera applicazione deve essere containerizzata utilizzando Docker e il controllo della versione deve essere gestito con Git.
+**Obiettivo**: Sviluppare una semplice applicazione web che gestisca un elenco di attività. Puoi scegliere di utilizzare Laravel, PHP puro o Python per il backend e qualsiasi framework frontend (Angular, Vue, React). Preferibilmente (ma non necessariamente) l'intera applicazione deve essere containerizzata utilizzando Docker e il controllo della versione deve essere gestito con Git.
 
 ## Note importanti
 - Leggi questo file completamente prima di cominciare
@@ -29,7 +29,7 @@
 - Usa Fetch API o Axios per effettuare richieste HTTP al backend.
 - **Includi commenti, dove lo ritieni necessario, che spieghino la logica del codice e le decisioni prese.**
 
-### Docker
+### Docker (facoltativo)
 - Containerizza l'applicazione utilizzando Docker.
 - Crea un `Dockerfile` sia per il backend che per il frontend.
 - Utilizza Docker Compose per orchestrare i servizi.
@@ -41,31 +41,20 @@
 - Fai commit regolari con messaggi significativi.
 - Pusha il codice in un repository pubblico su GitHub o GitLab.
 
-### npm
+### npm (facoltativo)
 - Utilizza npm per gestire le dipendenze del frontend.
 - Includi un file `package.json` con le dipendenze e gli script necessari.
 
 ## Consegne
 - L'URL di un repository pubblico Git contenente il progetto.
 - Un file `README.md` con le istruzioni su come configurare ed eseguire l'applicazione.
-- Un file Docker Compose per orchestrare i servizi backend e frontend.
+- Un file Docker Compose per orchestrare i servizi backend e frontend (se presente).
 - **Commenti e spiegazioni del codice.**
 
-## Criteri di Valutazione
-- Qualità e organizzazione del codice.
-- Implementazione corretta delle funzionalità API e frontend.
-- Uso appropriato di Docker per la containerizzazione.
-- Uso efficace di Git per il controllo della versione.
-- Documentazione chiara e completa.
-- **Chiarezza e profondità delle spiegazioni del codice.**
-- **Innovazione e funzionalità aggiuntive (se presenti).**
-
 ## Follow-up
-- Preparati per una sessione di code review per spiegare la tua implementazione.
-- Potresti ricevere un compito aggiuntivo da completare in un breve lasso di tempo dopo la consegna.
+- Sessione di code review per spiegare la tua implementazione
 
 ## Istruzioni
 - Effettua il fork del repository fornito nel tuo account GitHub.
 - Completa l'esercizio seguendo i requisiti sopra descritti.
 - Una volta completato, invia l'URL del repository insieme a eventuali note o commenti aggiuntivi sulla tua implementazione.
-- Preparati per una sessione di code review e per un possibile compito di follow-up.
