@@ -1,0 +1,22 @@
+services:
+  backend:
+    build:
+      context: ./
+      dockerfile: docker_backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - FLASK_ENV=development
+    command: python sviluppo_web.py
+  frontend:
+    build:
+      context: ./my-vue-app
+      dockerfile: docker_frontend
+    ports:
+      - "3000:8080"
+    volumes:
+      - ./frontend:/app
+    depends_on:
+      - backend

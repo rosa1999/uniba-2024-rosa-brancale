@@ -1,0 +1,29 @@
+# Utilizza l'immagine ufficiale di Node.js come base
+FROM node:20
+
+# Imposta la directory di lavoro
+WORKDIR /app
+
+# Copia il file package.json e package-lock.json nella directory di lavoro
+COPY package.json package-lock.json ./
+
+# Installa le dipendenze del progetto
+RUN npm install
+
+# Copia il file axios.js nella cartella src
+COPY axios.js ./src/
+
+# Copia il resto del codice dell'applicazione nella directory di lavoro
+COPY . .
+
+# Costruisce l'applicazione per la produzione
+RUN npm run build
+
+# Installa un server web statico per servire i file dell'applicazione
+RUN npm install -g serve
+
+# Esponi la porta su cui l'app Vue sarà in ascolto
+EXPOSE 8080
+
+# Comando per avviare l'applicazione
+CMD ["serve", "-s", "dist"]

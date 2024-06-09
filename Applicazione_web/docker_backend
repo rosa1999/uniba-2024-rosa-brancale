@@ -1,0 +1,21 @@
+# Utilizza l'immagine ufficiale di Python come base
+FROM python:3.12
+
+# Imposta la directory di lavoro
+WORKDIR /app
+
+# Copia il file requirements.txt e il file principale nella directory di lavoro
+COPY sviluppo_web.py /app/
+COPY requirements.txt /app/
+
+# Installa le dipendenze
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copia il resto del codice dell'applicazione nella directory di lavoro
+COPY . /app
+
+# Esponi la porta su cui l'app Flask sarà in ascolto
+EXPOSE 5000
+
+# Comando per avviare l'applicazione
+CMD ["python", "sviluppo_web.py"]
